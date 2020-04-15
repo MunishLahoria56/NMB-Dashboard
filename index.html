@@ -13,15 +13,83 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
 </head>
 <body>
 
 <div class="container-fluid">
+
   <div class="row">
-    <div class="col-lg-3 col-sm-12 pl-0">
+    <div class="col-lg-3 col-sm-12 px-0 ">
       <div class="dashboard-menu">
-		<div class="dashboard-logo text-center"">
-			<img src="images/logo.png" alt="logo" />
+		<!--moblie sceen-->
+			<div class="mb-menu">	
+				
+				<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="logo float-left">
+						<img src="images/logo.png" class="img-responsive" alt="logo" >
+				</div>
+					<div class="notifation float-right">
+						<div class="bell float-left">
+							<a href="#"><img src="images/bell.svg" alt="icon"/></a>
+						</div>
+						<div class="user float-left mr-5">
+							<div class="user-img">
+								<img src="images/user.png"  class="responsive-img float-left" alt="user">
+								<ul class="navbar-nav mr-auto float-left">
+									<li>Anonymous Singh</li>
+					
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NMB413145789
+											<span class="caret"></span></a>
+												<ul class="dropdown-menu">
+													<li><a href="#">Action</a></li>
+               
+												</ul>
+										</li>
+							
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<div class="dashboard-nav text-center">
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link active" href="#"><img src="images/home.svg" class="db-icon" alt="icon">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"><img src="images/zigzag.svg" class="db-icon" alt="icon">Activity</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="message.html"><img src="images/chat.svg" class="db-icon" alt="icon">Messages</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"><img src="images/marker.svg" class="db-icon" alt="icon">Nearby Matches</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"><img src="images/cog.svg" class="db-icon" alt="icon">Settings</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"><img src="images/shop.svg" class="db-icon" alt="icon">Shop</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"><img src="images/lifebuoy.svg" class="db-icon" alt="icon">Get Help</a>
+							</li>
+							<li>
+								<a class="logout" href="#"><i class="fa fa-sign-out"></i>Logout</a>
+							<li>
+						</ul>
+						</div>
+					</div>
+				</nav>
+				</div>
+		<div class="dashboard-logo text-center">
+			<img src="images/logo.png" alt="logo" >
 		</div>
 		<div class="dashboard-offer text-center">
 			<h2>Become poular</h2>
@@ -33,7 +101,9 @@
 				</a>
 			</div>
 		</div>
+		
 		<div class="dashboard-nav text-center">
+		<nav class="db-nav">	
 		<ul class="nav flex-column">
 			<li class="nav-item">
 			  <a class="nav-link active" href="#"><img src="images/home.svg" class="db-icon" alt="icon">Home</a>
@@ -42,7 +112,7 @@
 			  <a class="nav-link" href="#"><img src="images/zigzag.svg" class="db-icon" alt="icon">Activity</a>
 			</li>
 			<li class="nav-item">
-			  <a class="nav-link" href="#"><img src="images/chat.svg" class="db-icon" alt="icon">Messages</a>
+			  <a class="nav-link" href="message.html"><img src="images/chat.svg" class="db-icon" alt="icon">Messages</a>
 			</li>
 			<li class="nav-item">
 			  <a class="nav-link" href="#"><img src="images/marker.svg" class="db-icon" alt="icon">Nearby Matches</a>
@@ -51,7 +121,7 @@
 			  <a class="nav-link" href="#"><img src="images/cog.svg" class="db-icon" alt="icon">Settings</a>
 			</li>
 			<li class="nav-item">
-			  <a class="nav-link" href="#"><img src="images/cog.svg" class="db-icon" alt="icon">Shop</a>
+			  <a class="nav-link" href="#"><img src="images/shop.svg" class="db-icon" alt="icon">Shop</a>
 			</li>
 			<li class="nav-item">
 			  <a class="nav-link" href="#"><img src="images/lifebuoy.svg" class="db-icon" alt="icon">Get Help</a>
@@ -60,13 +130,15 @@
 				<a class="logout" href="#"><i class="fa fa-sign-out"></i>Logout</a>
 			<li>
 		  </ul>
+		  </nav>
+		  </div>
 		</div>
-	  </div>
+	  
     </div>
-    <div class="col-9 ">
+    <div class="col-lg-9  col-md-12">
       <div class="row">
 	  <div class="col-12 float-left">
-		<div class="notifation float-right">
+		<div class="notifation web float-right">
 			<div class="bell float-left">
 				<a href="#"><img src="images/bell.svg" alt="icon"/></a>
 				<span></span>
@@ -95,10 +167,106 @@
 		</div>
 	  </div>
 	  </div>
+	  <div class="row">
+		<div class="col-12">
+			<div class="db-pagination">
+			<nav aria-label="Page navigation example">
+				<ul class="pagination justify-content-center">
+					<li class="page-item">
+							<a class="page-link" href="#">Next</a>
+					</li>
+					<li class="page-item"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+						
+				</ul>
+			</nav>
+			</div>
+		</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+			<div class="fabs">
+			<div class="chat">
+				<div class="chat_header">
+					<div class="chat_option">
+						<div class="header_img">
+							<img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg"/>
+						</div>
+						<span id="chat_head">Jane Doe</span> <br> 
+						<span class="agent">Agent</span>
+						<span class="online">(Online)</span>
+						<span id="chat_fullscreen_loader" class="chat_fullscreen_loader">
+						<i class="fullscreen zmdi zmdi-window-maximize"></i>
+						</span>
+
+					</div>
+
+				</div>
+				<div class="chat_body chat_login">
+					<a id="chat_first_screen" class="fab">
+					<i class="zmdi zmdi-arrow-right"></i>
+					</a>
+					<p>We make it simple and seamless for businesses and people to talk to each other. Ask us anything</p>
+				</div>
+				<div id="chat_converse" class="chat_conversion chat_converse">
+					<a id="chat_second_screen" class="fab"><i class="zmdi zmdi-arrow-right"></i></a>
+					<span class="chat_msg_item chat_msg_item_admin">
+						<div class="chat_avatar">
+							<img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg"/>
+						</div>
+						Hey there! Any question?
+					</span>
+					<span class="chat_msg_item chat_msg_item_user">
+						Hello!
+					</span>
+					<span class="status">20m ago</span>
+					<span class="chat_msg_item chat_msg_item_admin">
+						<div class="chat_avatar">
+							<img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg"/>
+						</div>
+						Hey! Would you like to talk sales, support, or anyone?
+					</span>
+					<span class="chat_msg_item chat_msg_item_user">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+					</span>
+					<span class="status2">Just now. Not seen yet</span>
+				</div>
+				<div id="chat_body" class="chat_body">
+					<div class="chat_category">
+						<a id="chat_third_screen" class="fab"><i class="zmdi zmdi-arrow-right"></i></a>
+						<p>What would you like to talk about?</p>
+						<ul>
+							<li>Tech</li>
+							<li class="active">Sales</li>
+							<li >Pricing</li>
+							<li>other</li>
+						</ul>
+					</div>
+
+				</div>
+			<div class="fab_field">
+				<a id="fab_camera" class="fab"><i class="zmdi zmdi-camera"></i></a>
+				<a id="fab_send" class="fab"><i class="zmdi zmdi-mail-send"></i></a>
+				<textarea id="chatSend" name="chat_message" placeholder="Send a message" class="chat_field chat_message"></textarea>
+			</div>
+		</div>
+			<div class="prime">
+			<a id="prime" class="fab"><i class="fa fa-comment"></i></a>
+			</div>
+			
+	</div>
+		
+
+		</div>
+		
+	  </div>
     </div>
     
-  </div>
+ </div>
 </div>
-
+ <script src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
+<script src="js/index.js"></script>
+    
 </body>
 </html>
